@@ -23,3 +23,7 @@
 .form-body .btn {
     margin-top: 50px;
 }
+
+select {
+    width: 100%;
+}

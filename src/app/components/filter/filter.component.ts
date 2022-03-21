@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Filter {
+  type: string;
+}
+
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
