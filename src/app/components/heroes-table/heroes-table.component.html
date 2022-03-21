@@ -1,0 +1,26 @@
+<div class="table-container">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Date</th>
+      <th scope="col">Country</th>
+      <th scope="col">Company</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let hero of heroes; index as i">
+      <td>
+        {{ hero.name }}
+      </td>
+      <td>{{ hero.phone }}</td>
+      <td><a href="{{ 'mailto:' + hero.email }}">{{ hero.email }}</a></td>
+      <td>{{ hero.date }}</td>
+      <td>{{ hero.country }}</td>
+      <td>{{ hero.company }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,9 @@
+.table-header-container {
+    background: white;
+    padding: 20px 20px 5px 20px;
+    margin-bottom: 5px;
+}
+
+.col-md-10 {
+    text-align: right;
+}
