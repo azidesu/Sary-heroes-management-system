@@ -22,14 +22,8 @@ export const filters: Filter[] = [
         type: 'dropdown',
         api: 'http://countryapi.gear.host/v1/Country/getCountries?pLimit=25&pPage=1',
         multiple: false,
-      }, 
-    // {
-    //   title: 'country',
-    //   type: 'dropdown',
-    //   api: 'https://gonsole.com/app/location/load-cities.php',
-    //   multiple: false,
-    // }, 
-        {
+      },
+      {
         title: 'Date',
         type: 'date'
       }

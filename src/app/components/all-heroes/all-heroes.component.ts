@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./all-heroes.component.css']
 })
 export class AllHeroesComponent implements OnInit {
-  showFilter: boolean = true;
+  showFilter: boolean = false;
   subscription!: Subscription;
 
   constructor(private uiService: UiServiceService) { 

@@ -17,7 +17,7 @@
       </td>
       <td>{{ hero.phone }}</td>
       <td><a href="{{ 'mailto:' + hero.email }}">{{ hero.email }}</a></td>
-      <td>{{ hero.date }}</td>
+      <td>{{ hero.date.toString().split("GMT")[0] }}</td>
       <td>{{ hero.country }}</td>
       <td>{{ hero.company }}</td>
     </tr>
