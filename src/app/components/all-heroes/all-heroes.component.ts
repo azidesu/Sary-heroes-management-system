@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UiServiceService } from 'src/app/services/ui-service.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-all-heroes',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-heroes.component.css']
 })
 export class AllHeroesComponent implements OnInit {
+  showFilter: boolean = true;
+  subscription!: Subscription;
 
-  constructor() { }
+  constructor(private uiService: UiServiceService) { 
+    this.subscription = this.uiService.onToggle().subscribe((value) => {
+      this.showFilter = value;
+    });
+  }
 
   ngOnInit(): void {
   }
-
 }

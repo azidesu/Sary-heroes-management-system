@@ -4,7 +4,11 @@
             <h5>Heroes</h5>
         </div>
         <div class="col-md-10">
-            <div><span>search </span> <span> filter</span></div>
+            <fa-icon [icon]="searchIcon"></fa-icon>
+            <div class="spacer"></div>
+            <div (click)="onFilterClick()">
+                <fa-icon [icon]="filterIcon"></fa-icon> 
+            </div>
         </div>
     </div>
 </div>

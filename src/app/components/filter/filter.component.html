@@ -3,20 +3,19 @@
 </div>
 
 <form class="form-body">
-    <div class="form-group">
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  <div *ngFor="let filter of filters">
+    <div *ngIf="filter.type === 'text'" class="form-group">
+      <input type="{{filter.type}}" class="form-control" id="{{filter.title}}" placeholder="Enter {{filter.title}}">
     </div>
-    <div class="form-group">
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-group">
-      <select name="country" id="country">
-        <option value="Saudi Arabia">Saudi Arabia</option>
+    <div *ngIf="filter.type === 'dropdown'" class="form-group">
+      <select name="{{filter.title}}" id="{{filter.title}}">
+        <option *ngFor="let country of dropdownCountries" value="{{country.Alpha3Code}}">{{country.Alpha3Code}}</option>
       </select>
     </div>
-    <div class="input-group">
-      <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker">
+    <div *ngIf="filter.type === 'date'" class="input-group date-picker">
+      <input class="form-control" placeholder="yyyy-mm-dd" name="{{filter.title}}" ngbDatepicker #d="ngbDatepicker">
       <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
     </div>
-    <button type="submit" class="btn btn-primary">Filter</button>
-  </form>
+  </div>
+  <button type="submit" class="btn btn-primary"><fa-icon [icon]="faFilterIcon"></fa-icon> Filter</button>
+</form>
