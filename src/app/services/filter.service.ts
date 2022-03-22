@@ -17,10 +17,11 @@ export class FilterService {
     return filters;
   }
 
-  getCountriesApi(api: string): Observable<Country[]> {
-    return this.http.get<Country[]>(api);
-  }
+  // getCountries(api: string): Observable<Country[]> {
+  //   return this.http.get<Country[]>(api);
+  // }
 
+  // For test purposes
   getCountries(api: string): Country[] {
     return countries;
   }

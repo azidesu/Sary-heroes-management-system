@@ -31,3 +31,11 @@ select {
     margin-bottom: 5px;
     border: 1px solid #ced4da;
 }
+
+.submit-btn {
+    width: 100px;
+}
+
+.submit-btn span {
+    margin: 0 10px;
+}

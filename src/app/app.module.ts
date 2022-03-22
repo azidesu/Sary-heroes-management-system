@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,10 @@ import { FilterComponent } from './components/filter/filter.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+const appRoutes: Routes = [
+  {path: 'heroes', component: AllHeroesComponent}
+]
 
 @NgModule({
   declarations: [
@@ -29,6 +34,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatDatepickerModule,
     HttpClientModule,
     FontAwesomeModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
