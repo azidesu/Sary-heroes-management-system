@@ -5,7 +5,7 @@
 <form class="form-body">
   <div *ngFor="let filter of filters">
     <div *ngIf="filter.type === 'text'" class="form-group">
-      <input type="{{filter.type}}" class="form-control" id="{{filter.title}}" placeholder="Enter {{filter.title}}">
+      <input type="{{filter.type}}" class="form-control" id="{{filter.title}}" name="{{filter.title}}" placeholder="Enter {{filter.title}}">
     </div>
     <div *ngIf="filter.type === 'dropdown'" class="form-group">
       <select name="{{filter.title}}" id="{{filter.title}}">
