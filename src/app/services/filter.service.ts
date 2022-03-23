@@ -21,7 +21,7 @@ export class FilterService {
   //   return this.http.get<Country[]>(api);
   // }
 
-  // For test purposes
+  // For test purposes ** No http request
   getCountries(api: string): Country[] {
     return countries;
   }

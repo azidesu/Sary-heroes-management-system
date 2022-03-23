@@ -11,28 +11,44 @@ export class HeroesTableComponent implements OnInit {
 
   heroes: Hero[] = [
     {
-      name: 'Abdulaziz',
-      phone: '11223323',
-      email: 'a@gamil.com',
-      date: new Date(),
+      name: 'Kathryn Murphy',
+      phone: '(252) 555-012',
+      email: 'tanya.hill@exmaple.com',
+      date: "March 6, 2018",
       country: "Saudi Arabia",
-      company: "Sary"
+      company: "L 'Oreal"
     },
     {
-      name: 'kaa',
-      phone: '43423442',
-      email: 'ai@gami.om',
-      date: new Date(),
-      country: "US",
-      company: "hhh"
+      name: 'Wade Warren',
+      phone: '(671) 555-0110',
+      email: 'dolores.chambers@exmaple.com',
+      date: "September 24, 2017",
+      country: "Serbia",
+      company: "eBay"
     },
     {
-      name: 'test',
-      phone: '2331435',
-      email: 'wl@mil.com',
-      date: new Date(),
+      name: 'Devon Lane',
+      phone: '(209) 555-0104',
+      email: 'sara.cruz@exmaple.com',
+      date: "Februry 9, 2015",
+      country: "Russian Federation",
+      company: "Girllette"
+    },
+    {
+      name: 'Kathryn Murphy',
+      phone: '(252) 555-012',
+      email: 'tanya.hill@exmaple.com',
+      date: "March 6, 2018",
       country: "Saudi Arabia",
-      company: "fff"
+      company: "L 'Oreal"
+    },
+    {
+      name: 'Wade Warren',
+      phone: '(671) 555-0110',
+      email: 'dolores.chambers@exmaple.com',
+      date: "September 24, 2017",
+      country: "Serbia",
+      company: "eBay"
     },
   ];
 

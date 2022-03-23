@@ -17,7 +17,7 @@ export class TableHeaderComponent implements OnInit {
   }
 
   onFilterClick(): void {
-    this.uiService.toggleAddTask();
+    this.uiService.toggleShowFilter();
   }
 
 }

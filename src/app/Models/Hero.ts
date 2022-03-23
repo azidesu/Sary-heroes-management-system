@@ -2,7 +2,7 @@ export interface Hero {
     name: string;
     phone: string;
     email: string;
-    date: Date;
+    date: string;
     country: string;
     company: String;
 }

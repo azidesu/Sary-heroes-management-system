@@ -10,7 +10,7 @@ export class UiServiceService {
 
   constructor() { }
 
-  toggleAddTask(): void {
+  toggleShowFilter(): void {
     this.showFilter = !this.showFilter;
     this.subject.next(this.showFilter);
   }
